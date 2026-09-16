@@ -1,122 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karina Goswami — Data Analyst</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karina Goswami — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <a class="nav-logo" href="#home">KG</a>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nav-logo">KG<span class="logo-dot">.</span></a>
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#education">Education</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#casestudy">Case Studies</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
+  <a href="https://github.com/Karina-Goswami/Karina_Goswami_Portfolio/blob/main/Karina_Goswami_Resume%20(9).pdf" download class="nav-cta">Download CV</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" class="mm-link">About</a></li>
+    <li><a href="#work" class="mm-link">Work</a></li>
+    <li><a href="#casestudy" class="mm-link">Case Studies</a></li>
+    <li><a href="#skills" class="mm-link">Skills</a></li>
+    <li><a href="#contact" class="mm-link">Contact</a></li>
+    <li><a href="Karina_Resume.pdf" download class="mm-link">Download CV</a></li>
+  </ul>
+</div>
 
 <!-- HERO -->
 <section id="home" class="hero">
   <div class="hero-inner">
-    <div class="hero-left">
-      <div class="avatar">KG</div>
-      <div class="availability">
-        <span class="dot"></span> Available for work
-      </div>
-      <div class="location">📍 Ahmedabad, India</div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/karina-goswami-0323bb321/" class="social-btn" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <a href="https://github.com/Karina-Goswami/" class="social-btn" aria-label="GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        </a>
-      </div>
+
+    <div class="open-badge">
+      <span class="pulse-dot"></span>
+      Open to Work
     </div>
 
-    <div class="hero-right">
-      <span class="eyebrow">Portfolio · 2026</span>
-      <h1 class="hero-name">Hi, I'm <span class="accent">Karina Goswami</span></h1>
-      <div class="title-row">
-        <span class="title-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
-          Data Analyst
-        </span>
-        <span class="degree-pill">B.E. Computer Engineering · 2026</span>
-      </div>
-      <p class="hero-bio">
-        Recently graduated with hands-on experience in data analysis, business intelligence, and dashboard development. I transform raw data into decisions that move the needle — through Python, SQL, Power BI, and beyond.
-      </p>
-      <div class="cta-row">
-        <a href="https://github.com/Karina-Goswami/Karina_Goswami_Portfolio/blob/main/Karina_Goswami_Data_Analyst_Resume.pdf" download class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download CV
-        </a>
-        <a href="#projects" class="btn-secondary">View Projects →</a>
-      </div>
-      <div class="stats-row">
-        <div class="stat-card">
-          <span class="stat-num">5+</span>
-          <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">8.10</span>
-          <span class="stat-label">CGPA / 10</span>
-        </div>
-      </div>
+    <h1 class="hero-title">
+      I turn <span class="accent">messy data</span><br>
+      into business<br>
+      <span class="accent">decisions.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Business Analyst &nbsp;·Data Analyst &nbsp;·&nbsp &nbsp; Business Insights<br>
+      Ahmedabad &nbsp;·&nbsp; Pune &nbsp;·&nbsp; Mumbai &nbsp;·&nbsp; Bengluru·&nbsp; Remote
+    </p>
+
+    <div class="hero-actions">
+      <a href="#casestudy" class="btn-primary">View Case Studies</a>
+      <a href="#contact" class="btn-ghost">Let's Connect</a>
     </div>
+
+    
   </div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+</section>
 
-  <div class="skill-strip">
-    <span>Python</span><span>SQL</span><span>Power BI</span><span>Tableau</span>
-    <span>Excel</span><span>Pandas</span><span>Machine Learning</span><span>MongoDB</span>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Business-first.<br>Data-obsessed.</h2>
+        <p class="body-text">I'm a Computer Engineering graduate (2026) who found her calling at the intersection of data and business strategy. I don't just build dashboards — I ask <em>what decision does this chart need to support?</em> before writing a single DAX formula.</p>
+        <p class="body-text">At JHS & Associates LLP, I delivered a client-facing Power BI solution under real business constraints. That experience taught me what stakeholders actually need: speed, clarity, and answers — not more charts.</p>
+        <div class="about-tags">
+          <span>Power BI</span><span>Python</span><span>SQL</span><span>Business Intelligence</span><span>EDA</span><span>Machine Learning</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="stat-block">
+          
+          <div class="stat-row">
+            <div class="stat"><div class="stat-num">8.10</div><div class="stat-lbl">CGPA</div></div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-dot"></div>
+          <div>
+            <div class="exp-role">Business Data Analyst Intern</div>
+            <div class="exp-co">JHS & Associates LLP · 3 months</div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-dot" style="background:#444;"></div>
+          <div>
+            <div class="exp-role">Data Analyst Intern</div>
+            <div class="exp-co">Grras IT Solutions · 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education" class="section">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Education</span>
-      <h2 class="section-title">Academic background</h2>
+<!-- WORK / PROJECTS -->
+<section id="work" class="section section-dark">
+  <div class="container">
+    <p class="eyebrow">Portfolio</p>
+    <h2 class="section-title">Selected Work</h2>
+    <p class="section-sub">Each project is framed around a business problem, not a tech stack.</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card" data-num="01">
+        <div class="project-top">
+          <div class="project-tag">Python · SQL · Power BI · Risk Analytics</div>
+          <a href="https://github.com/Karina-Goswami/Loan_Delinquency_Risk_Analysis" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-title">
+          <a href="https://github.com/Karina-Goswami/Loan_Delinquency_Risk_Analysis" target="_blank" style="color:inherit;">
+            Loan Delinquency Risk Analysis
+          </a>
+        </h3>
+        <p class="project-desc">
+          Financial institutions lose profitability when borrowers miss repayments — yet traditional monitoring is manual and reactive. This project analyzed 500 customer profiles to identify delinquency patterns, segment risk, and deliver two interactive Power BI dashboards for credit risk teams.<br><br>
+          <strong>Dashboard 1 — Delinquency Analysis:</strong> Monitors repayment behavior over time, compares delinquency by location and credit card type, tracks monthly payment trends, and analyzes debt burden across income categories.<br><br>
+          <strong>Dashboard 2 — Risk Assessment:</strong> Identifies high-risk customers by credit score vs missed payments, analyzes debt-to-income ratio by income group, and flags customers requiring review before loan approval.<br><br>
+          <strong>Key findings:</strong> 80 of 500 customers identified as delinquent · Lower income segments carry highest debt-to-income ratio · Business credit card holders show highest delinquency rate · High-risk customers share pattern of low credit score + high outstanding balance + multiple missed payments.
+        </p>
+        <div class="project-impact">
+          <span class="impact-item">500 customer profiles</span>
+          <span class="impact-item">80 delinquent customers flagged</span>
+          <span class="impact-item">2 Power BI dashboards</span>
+          <span class="impact-item">Risk segmentation: Low · Medium · High</span>
+        </div>
+      </div>
+
+
+      <div class="project-card" data-num="02">
+        <div class="project-top">
+          <div class="project-tag">AI · Automation · Google Sheets · Power BI</div>
+          <a href="https://github.com/Karina-Goswami/AI-Operations-Automation-Email-Triage-Response-System" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-title">
+          <a href="https://github.com/Karina-Goswami/AI-Operations-Automation-Email-Triage-Response-System" target="_blank" style="color:inherit;">
+            AI Operations Automation — Email Triage & Response System
+          </a>
+        </h3>
+        <p class="project-desc">
+          Business teams lose hours manually reading, classifying, and replying to routine customer emails — yet most requests follow predictable patterns. This project built an end-to-end pipeline that watches incoming emails, uses AI to extract and classify each request, logs it for tracking, drafts a response automatically, and surfaces the data in a live Power BI dashboard.<br><br>
+          <strong>Pipeline:</strong> Gmail trigger → AI extraction & classification (structured JSON output) → Google Sheets logging → AI-drafted response generation → automated email reply → Power BI reporting layer.<br><br>
+          <strong>Dashboard — Request Tracking:</strong> Tracks total requests, unique customers/products/senders, breaks down volume by priority, request type, and status, and visualizes daily request trends for operational review.<br><br>
+        </p>
+        <div class="project-impact">
+          <span class="impact-item">AI-based email classification</span>
+          <span class="impact-item">Automated response drafting</span>
+          <span class="impact-item">Live Power BI reporting</span>
+        </div>
+      </div>
+
+
+      <div class="project-card" data-num="03">
+        <div class="project-top">
+          <div class="project-tag">Power BI · DAX · Power Query · Data Modeling</div>
+          <a href="https://github.com/Karina-Goswami/Supply_Chain_Analytics" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-title">
+          <a href="https://github.com/Karina-Goswami/Supply_Chain_Analytics" target="_blank" style="color:inherit;">
+            Supply Chain Analytics Dashboard
+          </a>
+        </h3>
+        <p class="project-desc">
+          Built a 4-page Power BI dashboard suite to give operations and leadership teams complete visibility across ~46K units sold, 5 suppliers, 5 locations, and 100 SKUs (Jan–Apr 2024).<br><br>
+          <strong>Executive Dashboard</strong> surfaces revenue, profit margin, lead time, and defect rate with supplier efficiency benchmarking and regional performance breakdown.<br><br>
+          <strong>Inventory Dashboard</strong> tracks stock health — inventory turnover 9.65 vs target 19.30, 12 out-of-stock SKUs, and city-level efficiency gaps.<br><br>
+          <strong>Logistics & Supplier Performance</strong> compares shipping costs across routes and transport modes with a full supplier matrix covering cost, lead time, and defect rate.<br><br>
+          <strong>Quality & Customer Performance</strong> links inspection outcomes — Pass, Fail, Pending — directly to supplier, product type, and city. Supplier 4 flagged at 66.67% defect rate.
+        </p>
+        <div class="project-impact">
+          <span class="impact-item">46K units · 100 SKUs · 5 suppliers</span>
+          <span class="impact-item">89.92% profit margin</span>
+          <span class="impact-item">Supplier 4 — 66.67% defect rate</span>
+          <span class="impact-item">Inventory turnover 50% below target</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-num="04">
+        <div class="project-top">
+          <div class="project-tag">Power BI · Excel · Data Analysis · Healthcare</div>
+          <a href="https://github.com/Karina-Goswami/Hospital_Analytics" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-title">
+          <a href="https://github.com/Karina-Goswami/Hospital_Analytics" target="_blank" style="color:inherit;">
+            Healthcare Analytics Dashboard
+          </a>
+        </h3>
+        <p class="project-desc">
+          Hospitals deal with thousands of patients daily — yet without clear visibility into patient flow, wait times, and satisfaction levels, resource allocation remains guesswork. I built this Power BI dashboard to give healthcare administrators a single view of all critical operational metrics across 9,216 patients.<br><br>
+          <strong>Patient Flow & Volume</strong> — 71.33% of visits occur on weekdays vs 28.67% on weekends. Patient volume peaks between May and October and dips in November–December — giving administrators advance notice to plan staffing and resources accordingly. 58.59% of patients are walk-ins with no referral, indicating high direct footfall that departments must be prepared to absorb.<br><br>
+          <strong>Department Referrals</strong> — General Practice leads referred departments with 1,840 patients, followed by Orthopedics at 995. Renal at 86 is the least visited — flagging either low demand or limited awareness that management can investigate.<br><br>
+          <strong>Satisfaction & Wait Time</strong> — Average satisfaction score is 5.47 out of 10 with an average wait time of 35.26 minutes. The data suggests wait time is a key driver of lower scores. Native American patients in the Infancy group score as low as 1.00 — a critical gap requiring immediate attention.<br><br>
+          <strong>Age & Gender</strong> — Adults dominate at 7,106 patients. Gender split is near equal — Male 51.05% vs Female 48.69% — confirming the hospital serves a balanced population across all groups.
+        </p>
+        <div class="project-impact">
+          <span class="impact-item">9,216 patients analyzed</span>
+          <span class="impact-item">Avg. wait time 35.26 mins</span>
+          <span class="impact-item">Satisfaction score 5.47 / 10</span>
+          <span class="impact-item">General Practice — busiest dept.</span>
+          <span class="impact-item">Peak volume May–October identified</span>
+        </div>
+      </div>
+
     </div>
-    <div class="edu-list">
-      <div class="edu-item">
-        <div class="edu-icon">🎓</div>
-        <div class="edu-body">
-          <h3>Bachelor of Engineering — Computer Engineering</h3>
-          <p class="edu-inst">Sal Engineering & Technical Institute</p>
-          <p class="edu-meta">2022 – 2026 &nbsp;·&nbsp; CGPA: <strong>8.10 / 10</strong></p>
-          <span class="edu-badge new-badge">Recently graduated</span>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="casestudy" class="section">
+  <div class="container">
+    <p class="eyebrow">Case Studies</p>
+    <h2 class="section-title">Business Analysis Case Study</h2>
+    <p class="section-sub">A real methodology document — from ambiguous client problem to root cause to dashboard.</p>
+
+    <div class="cases-grid">
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-num">CS-01</div>
+          <div class="case-industry">Logistics · Supply Chain</div>
+        </div>
+        <h3 class="case-title">"Our deliveries are delayed" — from symptom to root cause.</h3>
+        <div class="case-body">
+          <div class="case-phase">
+            <div class="phase-label">Situation</div>
+            <p>A client reported on-time delivery dropped from 92% to 78%, complaints increased, and certain cities performed worse than others. No structured investigation existed.</p>
+          </div>
+          <div class="case-phase">
+            <div class="phase-label">Analysis</div>
+            <p>Mapped the full end-to-end process — Procurement → Inventory → Dispatch → Logistics Partner → Transit → Last Mile. Investigated 9 dimensions: Location, Supplier, Inventory, Shipment, Vehicle, Route, Partner, and Last Mile. Drill-down on Partner C revealed Kolkata as the problem city, large shipment batches as the cause, late vehicle departure due to batch consolidation delays as the root cause.</p>
+          </div>
+          <div class="case-phase">
+            <div class="phase-label">Recommendation</div>
+            <p>Root cause was vehicle allocation and batch-consolidation process — not Partner C itself. Fix: split large batches, set dispatch time SLAs, redesign consolidation logic. Expected OTD recovery to 90%+.</p>
+          </div>
         </div>
       </div>
-      <div class="edu-item">
-        <div class="edu-icon">📚</div>
-        <div class="edu-body">
-          <h3>Higher Secondary (12th) — Science Stream</h3>
-          <p class="edu-inst">Nishan School</p>
-          <p class="edu-meta">2021 – 2022</p>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-num">CS-02</div>
+          <div class="case-industry">BA Methodology · Root Cause</div>
+        </div>
+        <h3 class="case-title">8-phase BA methodology built for any "something is wrong" problem.</h3>
+        <div class="case-body">
+          <div class="case-phase">
+            <div class="phase-label">Situation</div>
+            <p>Client stated "Partner C is the problem." A common mistake is to accept this and build a partner-performance dashboard immediately.</p>
+          </div>
+          <div class="case-phase">
+            <div class="phase-label">Analysis</div>
+            <p>Drilled down one level at a time — Partner C flagged → Kolkata performs worse than other cities → Large shipment batches perform worse → Large batches have longer consolidation time → Late vehicle departure → Long transit time → Late last-mile delivery (observed symptom).</p>
+          </div>
+          <div class="case-phase">
+            <div class="phase-label">Recommendation</div>
+            <p>Root cause hypothesis: Vehicle allocation and batch-consolidation process creates unnecessary waiting time. This is a specific, fixable process failure — not a vague partner complaint. Fix the consolidation logic and set dispatch time SLAs before evaluating the partner.</p>
+          </div>
         </div>
       </div>
-      <div class="edu-item">
-        <div class="edu-icon">📖</div>
-        <div class="edu-body">
-          <h3>Secondary School (10th)</h3>
-          <p class="edu-inst">Nishan School</p>
-          <p class="edu-meta">2019 – 2020</p>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-num">CS-03</div>
+          <div class="case-industry">Dashboard Design · BI</div>
+        </div>
+        <h3 class="case-title">Dashboard structured around the investigation — not around available charts.</h3>
+        <div class="case-body">
+          <div class="case-phase">
+            <div class="phase-label">Situation</div>
+            <p>Once root cause is identified, the guiding dashboard question is not "which charts should I use?" but "what information does the client need to make a decision?"</p>
+          </div>
+          <div class="case-phase">
+            <div class="phase-label">Analysis</div>
+            <p>Proposed 5-page dashboard structure mapped directly to the investigation path — Page 1: Executive Overview · Page 2: Location Analysis (State → City → Zone → Area) · Page 3: Logistics Analysis (Partner → Vehicle → Route) · Page 4: Process Stage Timings · Page 5: Root Cause Breakdown by delay reason, stage, location, and partner.</p>
+          </div>
+          <div class="case-phase">
+            <div class="phase-label">Recommendation</div>
+            <p>Key KPIs to track: On-Time Delivery % · Average Delivery Time · Delayed Orders Count · Complaint Rate · Return Rate · Partner SLA Adherence · Stage-wise Average Time · Batch Consolidation Wait Time · Last Mile Delivery Success Rate.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -124,235 +297,165 @@
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section section-alt">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Skills</span>
-      <h2 class="section-title">Tools & technologies</h2>
-    </div>
-    <div class="skills-grid">
+<section id="skills" class="section section-dark">
+  <div class="container">
+    <p class="eyebrow">Capabilities</p>
+    <h2 class="section-title">What I work with</h2>
+
+    <div class="skills-cols">
       <div class="skill-group">
-        <h4 class="skill-group-title">Languages & Data</h4>
-        <div class="skill-tags">
-          <span>Python</span><span>Pandas</span><span>NumPy</span>
-          <span>SQL</span><span>PostgreSQL</span><span>MongoDB</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h4 class="skill-group-title">Visualization & BI</h4>
-        <div class="skill-tags">
-          <span>Power BI</span><span>DAX</span><span>Power Query</span>
-          <span>Tableau</span><span>Matplotlib</span><span>Seaborn</span>
-          <span>Plotly</span>
+        <div class="skill-group-title">Data & Analytics</div>
+        <div class="skill-list">
+          <div class="skill-row"><span>SQL</span></div>
+          <div class="skill-row"><span>Python (Pandas, NumPy)</span></div>
+          <div class="skill-row"><span>Excel & Power Query</span></div>
+          <div class="skill-row"><span>MongoDB</span></div>
         </div>
       </div>
       <div class="skill-group">
-        <h4 class="skill-group-title">Machine Learning</h4>
-        <div class="skill-tags">
-          <span>Scikit-learn</span><span>XGBoost</span><span>Random Forest</span>
-          <span>KMeans</span><span>Streamlit</span>
+        <div class="skill-group-title">Visualization & BI</div>
+        <div class="skill-list">
+          <div class="skill-row"><span>Power BI & DAX</span></div>
+          <div class="skill-row"><span>Tableau</span></div>
+          <div class="skill-row"><span>Matplotlib & Seaborn</span></div>
         </div>
       </div>
       <div class="skill-group">
-        <h4 class="skill-group-title">Core Concepts</h4>
-        <div class="skill-tags">
-          <span>EDA</span><span>KPI Tracking</span><span>Data Cleaning</span>
-          <span>Statistics</span><span>Excel</span><span>Data Storytelling</span>
+        <div class="skill-group-title">AI & Machine Learning</div>
+        <div class="skill-list">
+          <div class="skill-row"><span>Scikit-learn</span></div>
+          <div class="skill-row"><span>EDA & Feature Engineering</span></div>
+          <div class="skill-row"><span>Predictive Modeling</span></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Experience</span>
-      <h2 class="section-title">Work history</h2>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <div>
-              <h3>Business Data Analyst Intern</h3>
-              <p class="tl-company">JHS & Associates LLP</p>
-            </div>
-            <span class="tl-date">3 months</span>
-          </div>
-            <p class="tl-desc">Worked on a client project covering the full analytics workflow — from business understanding and requirement gathering to data extraction, cleaning, and transformation using Power Query. Built DAX-based KPIs and developed interactive Power BI dashboards tailored to client reporting needs, enabling data-driven decision-making.</p>          <div class="tl-tags"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>SQL</span><span>Python</span><span>Excel</span><span>Google Sheet</span></div>
+    <div class="certs-row">
+      <div class="cert-badge">
+        <div class="cert-icon">&#10022;</div>
+        <div>
+          <div class="cert-name">GenAI Data Analytics</div>
+          <div class="cert-issuer">Tata / Forage</div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="tl-dot tl-dot-muted"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <div>
-              <h3>Data Analyst Intern</h3>
-              <p class="tl-company">Grras IT Solutions</p>
-            </div>
-          </div>
-<p class="tl-desc">Cleaned and analyzed 5+ datasets using Python and SQL, developed 4+ Power BI dashboards to track KPIs and business trends, and performed customer segmentation and statistical analysis — reducing reporting turnaround time by 25%.</p>        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section section-alt">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Projects</span>
-      <h2 class="section-title">Things I've built</h2>
-    </div>
-    <div class="projects-grid">
-
-      
-      <div class="project-card featured">
-        <div class="project-top">
-          <span class="project-icon">🛒</span>
-          <span class="featured-label">Featured</span>
+      <div class="cert-badge">
+        <div class="cert-icon">&#10022;</div>
+        <div>
+          <div class="cert-name">Python + AI</div>
+          <div class="cert-issuer">C-DAC</div>
         </div>
-        <h3>E-commerce Analytics & ML Dashboard</h3>
-        <p>End-to-end analytics platform built on 100K+ records and 6,987 SKUs. Covers SKU segmentation (KMeans), cancellation prediction (Random Forest), and sales forecasting (XGBoost) with a business-friendly Streamlit interface.</p>
-        <div class="project-tags"><span>Python</span><span>Streamlit</span><span>XGBoost</span><span>KMeans</span><span>Power BI</span></div>
       </div>
-
-       <div class="project-card">
-        <div class="project-top"><span class="project-icon">🏦</span></div>
-        <h3>Loan Delinquency Risk Analysis</h3>
-<p>Analyzed customer financial and repayment data to uncover delinquency patterns and key risk factors. Designed interactive Power BI dashboards to provide actionable business insights, monitor loan portfolio performance, and support informed lending decisions.</p>
-        <div class="project-tags"><span>Python</span><span>SQL</span><span>Power BI</span><span>Business Intelligence</span><span>Dashboard Development</span></div>
-        <a href="https://github.com/Karina-Goswami/Loan_Delinquency_Risk_Analysis" class="project-link">View project →</a>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-top"><span class="project-icon">📉</span></div>
-        <h3>Customer Churn & Retention Analysis</h3>
-        <p>SaaS churn analysis covering churn rate, MRR, NPS, and trial conversion across fiscal years using SQL, MongoDB, and Power BI dashboards.</p>
-        <div class="project-tags"><span>Power BI</span><span>SQL</span><span>MongoDB</span><span>DAX</span></div>
-        <a href="https://github.com/Karina-Goswami/Customer_Churn_-_Retention_Analysis" class="project-link">View project →</a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top"><span class="project-icon">🛍️</span></div>
-        <h3>Customer Shopping Behavior Dashboard</h3>
-        <p>Interactive Power BI dashboard analyzing customer behavior, revenue trends, high-value segments, discount impact, and top locations.</p>
-        <div class="project-tags"><span>Power BI</span><span>DAX</span><span>Power Query</span></div>
-        <a href="https://github.com/Karina-Goswami/Customer_Shopping_Behaviour_Project" class="project-link">View project →</a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top"><span class="project-icon">📊</span></div>
-        <h3>Business Insights Dashboard — Tableau</h3>
-        <p>Dual-view dashboard (Sales & Customer) tracking revenue, profit, customer segments, and year-over-year trends. Identifies high-value customers and top products.</p>
-        <div class="project-tags"><span>Tableau</span><span>EDA</span></div>
-        <a href="https://github.com/Karina-Goswami/Business-Insights-Dashboard-Sales-Customer-Tableau" class="project-link">View project →</a>
-      </div>
-
-
-      <div class="project-card">
-        <div class="project-top"><span class="project-icon">☕</span></div>
-        <h3>Cafe Sales Analysis Dashboard</h3>
-        <p>Tracks sales performance, revenue trends, and customer behavior by item, payment method, and weekday vs weekend patterns. Helps identify peak periods and top sellers.</p>
-        <div class="project-tags"><span>Power BI</span><span>DAX</span></div>
-        <a href="https://github.com/Karina-Goswami/cafe_sale" class="project-link">View project →</a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top"><span class="project-icon">🏥</span></div>
-        <h3>Healthcare Analytics Dashboard</h3>
-        <p>Monitors patient flow, department referrals, satisfaction scores, and wait times across 9,216 patients to support hospital resource planning.</p>
-        <div class="project-tags"><span>Power BI</span><span>EDA</span></div>
-        <a href="https://github.com/Karina-Goswami/Hospital_Analytics" class="project-link">View project →</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Certifications</span>
-      <h2 class="section-title">Credentials</h2>
-    </div>
-    
-      <div class="cert-card">
-        <div class="cert-icon">📋</div>
-        <div class="cert-body">
-          <h3>Data Analyst Certificate</h3>
-          <p>Tata GenAI Powered Data Analytics / Tata Forage</p>
+      <div class="cert-badge">
+        <div class="cert-icon">&#10022;</div>
+        <div>
+          <div class="cert-name">Business Data Analyst</div>
+          <div class="cert-issuer">JHS & Associates LLP</div>
         </div>
-        <a href="https://github.com/Karina-Goswami/Karina_Goswami_Portfolio/blob/main/Tata%20data%20analytics%20certificate.pdf" class="cert-btn" target="_blank">View →</a>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🐍</div>
-        <div class="cert-body">
-          <h3>Python + Artificial Intelligence</h3>
-          <p>Centre for Development of Advanced Computing (C-DAC)</p>
-        </div>
-        <a href="https://github.com/Karina-Goswami/Karina_Goswami_Portfolio/blob/main/C-dac%20python.jpeg" class="cert-btn" target="_blank">View →</a>
-      </div>
-      
-        <a href="https://github.com/Karina-Goswami/Karina_Goswami_Portfolio/blob/main/AI%20%20c-dac.jpeg" class="cert-btn" target="_blank">View →</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section section-alt">
-  <div class="section-inner contact-inner">
-    <div class="section-header" style="text-align:center">
-      <span class="section-tag">Contact</span>
-      <h2 class="section-title">Let's connect</h2>
-      <p class="contact-sub">Open to fresher data analyst roles, internships, and remote opportunities.</p>
-    </div>
+<section id="contact" class="section">
+  <div class="container">
     <div class="contact-grid">
-      <a href="mailto:goswamikarina01@gmail.com" class="contact-card">
-        <div class="contact-icon">✉️</div>
-        <div>
-          <p class="contact-label">Email</p>
-          <p class="contact-val">goswamikarina01@gmail.com</p>
+
+      <div class="contact-left">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let's build<br>something with data.</h2>
+        <p class="body-text">I'm actively looking for Data Analyst, BI Analyst roles in Ahmedabad, Pune, Mumbai or Remote. If you have a problem that data can solve — let's talk.</p>
+
+        <div class="contact-links">
+          <a href="mailto:goswamikarina01@gmail.com" class="contact-link">
+            <span class="cl-icon">@</span>
+            goswamikarina01@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/karina-goswami-0323bb321/" class="contact-link" target="_blank" rel="noopener">
+            <span class="cl-icon">in</span>
+            LinkedIn
+          </a>
+          <a href="https://github.com/karina-goswami" class="contact-link" target="_blank" rel="noopener">
+            <span class="cl-icon">gh</span>
+            Github
+          </a>
         </div>
-      </a>
-      <a href="tel:+917779062790" class="contact-card">
-        <div class="contact-icon">📱</div>
-        <div>
-          <p class="contact-label">Phone</p>
-          <p class="contact-val">+91 7779062790</p>
+
+        <div class="open-to-work-card">
+          <span class="pulse-dot"></span>
+          <div>
+            <div class="otw-title">Open to Work</div>
+            <div class="otw-roles">Data Analyst · BI Analyst · Business Analyst</div>
+            <div class="otw-locs">Ahmedabad · Pune · Mumbai · Remote</div>
+          </div>
         </div>
-      </a>
-      <a href="https://www.linkedin.com/in/karina-goswami-0323bb321/" target="_blank" class="contact-card">
-        <div class="contact-icon">🔗</div>
-        <div>
-          <p class="contact-label">LinkedIn</p>
-          <p class="contact-val">linkedin.com/in/karina</p>
-        </div>
-      </a>
-      <a href="https://github.com/Karina-Goswami/" target="_blank" class="contact-card">
-        <div class="contact-icon">⌨️</div>
-        <div>
-          <p class="contact-label">GitHub</p>
-          <p class="contact-val">github.com/karina</p>
-        </div>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:2rem">
-      <a href="https://github.com/Karina-Goswami/Karina_Goswami_Portfolio/blob/main/Karina_Goswami_Data_Analyst_Resume.pdf" download class="btn-primary">Download CV →</a>
+      </div>
+
+      <div class="contact-right">
+        <form class="msg-form" id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <h3 class="form-title">Send me a message</h3>
+          <p class="form-sub">I'll reply within 24 hours.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your name</label>
+              <input type="text" id="fname" placeholder="Alex Sharma" required>
+              <span class="field-error" id="err-fname"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email address</label>
+              <input type="email" id="femail" placeholder="alex@company.com" required>
+              <span class="field-error" id="err-femail"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <select id="fsubject" required>
+              <option value="">Select a topic</option>
+              <option value="Job opportunity">Job opportunity</option>
+              <option value="Freelance project">Freelance project</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Just saying hi">Just saying hi</option>
+            </select>
+            <span class="field-error" id="err-fsubject"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" rows="5" placeholder="Tell me about the role, project, or just say hi..." required></textarea>
+            <span class="field-error" id="err-fmsg"></span>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span id="btnText">Send Message &#8594;</span>
+            <span id="btnSpinner" class="spinner" style="display:none;"></span>
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            &#10003; Message sent! I'll get back to you within 24 hours.
+          </div>
+          <div class="form-fail" id="formFail">
+            &#9888; Something went wrong. Email me directly at your.email@gmail.com
+          </div>
+        </form>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Karina Goswami </p>
+  <div class="container footer-inner">
+    <span class="footer-logo">KG<span class="logo-dot">.</span></span>
+    <span class="footer-copy">&copy; 2026 Karina Goswami &nbsp;·&nbsp; Ahmedabad, India</span>
+    <span class="footer-made">Crafted with data in mind.</span>
+  </div>
 </footer>
 
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
